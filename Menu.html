@@ -9,8 +9,13 @@ $(function(){
     alert("Yei");
   });
 
-  $("h1").click(function() {
+  $("h1").dblclick(function() {
     $(this).hide();
+  });
+
+  $("h1").mouseenter(function(){
+    $("p").hide();
+
   });
 
 
