@@ -2,6 +2,20 @@
 <html>
 <head>
 <link rel="stylesheet" href="estilo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $("#btn").click(function(){
+    alert("Yei");
+  });
+
+  $("h1").click(function() {
+    $(this).hide();
+  });
+
+
+});
+</script>
 </head>
 <body>
 
@@ -10,13 +24,15 @@
 
 <h1>Otra</h1>
 
-<form action="/Menu.html">
+<form action="">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
+  <button id ="btn">Enviar</button>
 </form>
+
+
 
 
 
