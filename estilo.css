@@ -1,3 +1,25 @@
+
+#div1 {
+    width: 80px;
+    height:80px;
+    display:none;
+    background-color:red;
+    }
+
+#div2 {
+    width:80px;
+    height:80px;
+    display:none;
+    background-color:rgb(151, 149, 236);
+    }
+
+#div3 {
+    width:80px;
+    height:80px;
+    display:none;
+    background-color:rgb(196, 30, 66);
+    }
+
 body {background-color: rgb(92, 2, 65);}
 h1   {color: rgb(123, 255, 0);}
 p    {color: white;}

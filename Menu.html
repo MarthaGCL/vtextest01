@@ -4,25 +4,32 @@
 <link rel="stylesheet" href="estilo.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
 $(function(){
   $("#btn").click(function(){
-    alert("Yei");
+    //alert("Yei");
+    $("#div1").fadeIn();
+    $("#div1").fadeOut();
+    $("#div2").fadeIn("slow");
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeIn(3000);
+    $("#div3").fadeOut(3000);
   });
 
   $("h1").dblclick(function() {
-    $(this).hide();
+    $(this).hide(400);
   });
 
   $("h1").mouseenter(function(){
-    $("p").hide();
+    $("p").toggle();
 
   });
 
 
   $("#otra").hover(function(){
 
-    $("#btn").css("background-color","#000000");
-    $("#btn").css("color","#ffffff");
+    $("#in").css("background-color","#000000");
+    $("#in").css("color","#ffffff");
 
 
   });
@@ -31,6 +38,9 @@ $(function(){
 </script>
 </head>
 <body>
+  <div id="div1"></div><br>
+  <div id="div2"></div><br>
+  <div id="div3"></div>
 
 <h1>Cabecera Nueva 02</h1>
 <p>This is a paragraph.</p>
@@ -42,10 +52,13 @@ $(function(){
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
-  <button id ="btn">Enviar</button>
+  <button id="in">Enviar</button>
+
+  
+
 </form>
 
-
+<button id="btn">Mostrar</button>
 
 
 
